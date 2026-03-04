@@ -91,7 +91,7 @@ Watch Copilot generate 7+ files following the exact patterns defined in the skil
 
 Create `.github/skills/frontend-component/SKILL.md`:
 
-```markdown
+````markdown
 ---
 name: frontend-component
 description: Generate React components for the OctoCAT Supply Chain frontend following established patterns. Use this skill when creating new entity pages, form components, or data display components. Triggers on requests to add frontend features, create pages, or implement UI components.
@@ -351,13 +351,13 @@ When creating a new frontend component, ensure you complete ALL steps:
 - [ ] **Unit tests** (`frontend/src/components/entity/{entity}/{Entity}s.test.tsx`) — Render, loading, data, search tests
 - [ ] **Route** (`frontend/src/App.tsx`) — Add React Router path
 - [ ] **Navigation** (`frontend/src/components/Navigation.tsx`) — Add nav link
-```
+````
 
 ### Step 6: Create the references file
 
 Create `.github/skills/frontend-component/references/component-patterns.md`:
 
-```markdown
+````markdown
 # Component Patterns Reference
 
 ## Data Fetching
@@ -386,32 +386,32 @@ Every color class needs a dark mode variant:
 ## Common Tailwind Patterns
 
 **Card:**
-```
+~~~
 bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border border-gray-200 dark:border-gray-700
-```
+~~~
 
 **Button (primary):**
-```
+~~~
 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors
-```
+~~~
 
 **Input:**
-```
+~~~
 w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 
 dark:bg-gray-700 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500
-```
+~~~
 
 **Table row:**
-```
+~~~
 border-b border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700
-```
+~~~
 
 ## Contexts Available
 
 - `useAuth()` from `context/AuthContext` — current user, login/logout
 - `useTheme()` from `context/ThemeContext` — dark/light mode toggle
 - `useCart()` from `context/CartContext` — cart operations
-```
+````
 
 ---
 
