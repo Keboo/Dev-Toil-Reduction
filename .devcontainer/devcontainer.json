@@ -59,6 +59,7 @@
     }
   },
   "postCreateCommand": "make install && make build",
+  "postStartCommand": "git config --global --get-all safe.directory | grep -Fxq \"${containerWorkspaceFolder}\" || git config --global --add safe.directory \"${containerWorkspaceFolder}\"",
   // set the API port to public visibility
   "postAttachCommand": "gh cs ports visibility 3000:public -c \"$CODESPACE_NAME\"",
   "shutdownAction": "stopCompose",
